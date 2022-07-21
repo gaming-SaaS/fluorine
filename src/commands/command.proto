@@ -1,0 +1,17 @@
+
+syntax = "proto3";
+
+package command;
+
+service CommandsService {
+  rpc FindOne (CommandById) returns (Command) {}
+}
+
+message CommandById {
+  int32 id = 1;
+}
+
+message Command {
+  int32 id = 1;
+  string name = 2;
+}
