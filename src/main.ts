@@ -1,5 +1,5 @@
 
-import { bootstrap } from '@gaming-saas/nest-plus';
+import { bootstrap } from 'nest-plus';
 import { version, name } from "../package.json";
 import { AppModule } from "./app.module";
 
